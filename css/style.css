@@ -1,0 +1,29 @@
+/* Header */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F8F9;
+    padding: 0 20px;
+    align-items: center;
+    height: 50px;
+}
+.navigation  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a {
+    margin-right: 22px;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #343638;
+    opacity: 0.5;
+}
+
+.navigation .active-page {
+    opacity: 1;
+}
+/* Finish-Header */
