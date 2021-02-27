@@ -230,3 +230,88 @@ nav{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+/* Finish-Section2 */
+
+/* Section-3 */
+.section3 {
+    margin-top: 40px;
+}
+.section3-title {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 36px;
+    color: #202124;
+}
+.section3-left-div  {
+    background-image: url(../img/bridge.jpg);
+    /* width: 760px; */
+    height: auto;
+    padding: 40px;
+    background-size: cover;
+}
+.section3-left-div-title {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.section3-left-div-box-title {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 34px;
+}
+.section3-left-div-box-p  {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.section3-left-div-box {
+    margin-top: 230px;
+}
+.section3-left-div2 {
+    background-image: url(../img/wood.jpg);
+    /* width: 760px; */
+    height: auto;
+    padding: 40px;
+    margin-top: 40px;
+    background-size: cover;
+}
+.section3-small-box-title {
+    font-size: 16px;
+    color: #202124;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.section3-main-div {
+    display: flex;
+    justify-content: space-between;
+}
+.section3-right-small-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.section3-div {
+    width: 60%;
+}
+.small-box-divs1-img,
+.small-box-divs2-img,
+.small-box-divs3-img {
+    width: 360px;
+    height: 210px;
+    border-radius: 15px;
+    max-width: 450px;
+    background-image: url(../img/umbrella.jpg);
+    background-size: cover;
+
+}
+.section-3-title-div{
+    position: relative;
+}
+/* Finish-Section3 */
