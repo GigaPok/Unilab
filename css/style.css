@@ -399,8 +399,8 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 40;
+    right: 10;
 }
 .footer-icons a {
     margin-right: 32px;
