@@ -5,27 +5,48 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
     <title>Unilab - Project</title>
+    <meta name="description" content="Unilab-Project">
+    <meta name="keywords" content="Unilab, Project, course">
+    <script src="./main.js"></script>
 </head>
 
 <body>
     <!-- Start-Header -->
     <header>
         <nav>
-            <div>
+            <div class="logo-wrap">
                 <a href="index.html">
                     <img src="img/LOGO-white.svg" alt="logo">
                 </a>
+                <a class="open-menu" onclick="menuToggle()">
+                    <i class="open fas fa-bars"></i>
+                    <i class="close fas fa-times"></i>
+                </a>
             </div>
             <div class="navigation">
-                <a class="active-page" href="index.html">HOME</a>
-                <a href="#">DISCOVERY</a>
-                <a href="#">PHOTOS</a>
-                <a href="#">CONTACT</a>
+                <a class="active-page" href="index.html">
+                    <i class="fas fa-home"></i>
+                    HOME
+                </a>
+                <a href="#">
+                    <i class="fas fa-compass"></i>
+                    DISCOVERY
+                </a>
+                <a href="#">
+                    <i class="far fa-image"></i>
+                    PHOTOS
+                </a>
+                <a href="#">
+                    <i class="far fa-envelope"></i>
+                    CONTACT
+                </a>
                 <a class="profile-icon" href="#">
                     <img src="img/profile-icon.svg" alt="profile-icon">
+                    <span>PROFILE</span>
                 </a>
             </div>
         </nav>
@@ -52,7 +73,7 @@
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
-            <div>
+            <div class="section1-article-box">
                 <div>
                     <h3 class="section-1-right-div-theme-title">TRAVEL</h3>
                     <h3 class="section-1-right-div-article-title">Article title</h3>
@@ -64,7 +85,7 @@
                         <p>2 min ago</p>
                     </div>
                 </div>
-                <div>
+                <div class="section1-article2">
                     <h3 class="section-1-right-div-theme-title">TECHNOLOGY</h3>
                     <h3 class="section-1-right-div-article-title">Article title</h3>
                     <p class="section-1-right-div-text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad

@@ -13,7 +13,19 @@ nav{
     align-items: center;
     height: 50px;
 }
-
+.burger-nav {
+    display: none;
+}
+nav .logo-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+nav .logo-wrap .open-menu {
+    color: #343638;
+    display: none;
+}
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -26,6 +38,13 @@ nav{
     font-weight: 700;
     color: #343638;
     opacity: 0.5;
+}
+.navigation a span {
+    color: #343638;
+    opacity: 0.5;
+}
+.navigation a i, .navigation a span {
+    display: none;
 }
 
 .navigation .active-page,
@@ -141,7 +160,7 @@ nav{
     margin-top: 10px;
     font-size: 16px;
     line-height: 21px;
-    width: 100%;
+    width: 95%;
     font-weight: 400;
 }
 
@@ -169,6 +188,7 @@ nav{
     color: #A6ADB4;
     font-size: 13px;
     margin-top: 12px;
+    align-items: center;
 }
 .post-publish-time p {
     font-style: italic;
@@ -183,7 +203,7 @@ nav{
 
 /* Section-2 */
 .container {
-    padding: 40px 140px;
+    padding: 0 140px;
 }
 
 .section-2-div-title {
@@ -219,7 +239,7 @@ nav{
 .section2-div {
     display: grid;
     margin-top: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 40px;
 }
 .section2-box img {
@@ -366,25 +386,32 @@ nav{
 }
 
 .datepicker,
-.keywords  {
+.keywords {
     position: relative;
-    width: 360px;
-    height: 63px;
     margin-top: 10px;
     margin-bottom: 40px;
     font-size: 13px;
     color: #A6ADB4;
     -webkit-appearance: none;
-    padding: 20px 16px;
     position: relative;
     outline: none;
+    width: 360px;
+    height: 63px;
     border: 1px solid #EBEDED;
+}
+.datepicker {
+    padding: 20px 16px;
 }
 .datepicker input,
 .keywords input { 
     background: none;
     border: none;
     outline: none;
+}
+.keywords input { 
+    padding: 20px 16px;
+    width: 360px;
+    height: 63px;
 }
 .datepicker::before {
     content: "\f063";
@@ -397,12 +424,20 @@ nav{
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    z-index: 10;
+    z-index: 20;
+    opacity: 1;
 }
-input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+    content: "\f063";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    z-index: 30;
+    opacity: 0;
 }
 .submit-button {
     width: 134px;
@@ -483,8 +518,13 @@ form label {
     border-top: 2px solid #EBEDED;
     border-bottom: 2px solid #EBEDED;
     padding: 40px 0;
+    margin-top: 40px;
 }
-.p2-sec2-main-div div{
+.p2-sec2-rigth-div{
+    display: flex;
+    width: 64%;
+}
+.p2-sec2-div-box1{
     width: 33%;
 }
 .p2-sec2-div-box1 h2 {
@@ -500,23 +540,64 @@ form label {
     line-height: 26px;
     color: #A6ADB4;
 }
+.p2-sec2-main-div-box2{
+    margin-left: 40px;
+}
 /* Finish-P2-Section2 */
 
 /* P2-Section3 */
 
-.section3 img{
+.p2-section3 img{
     width: 100%;
 }
 
-.section3 p {
+.p2-section3 p {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: #A6ADB4;
     margin-top: 20px;
-    width:60%;
+    width: 60%;
 }
-
+.p2-section3 span {
+    display: none;
+    color: #202124;
+    font-style: italic;
+    margin-top: 20px;
+    width:100%;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    border-bottom: 2px solid #EBEDED;
+    padding-bottom: 40px;
+}
+.page-number {
+    display: none;
+    margin-top: 40px;
+    justify-content: center;
+}
+.page-number a {
+    margin: 0 12px;
+    color: #A6ADB4;
+    font-size: 11px;
+    font-weight: 400;
+}
+.page-number .pg-num-active {
+    color: #202124;
+    font-weight: 700;
+}
+.page-number a:last-of-type img {
+    transform: translateY(3px);
+}
+.pg-num-active::after {
+    content: " ";
+    width: 12px;
+    height: 2px;
+    background-color: #FA6980;
+    display: block;
+    margin-top: 10px;
+    border-color: #FA6980;
+}
 /* Finish P2-Section3 */
 
 /* footer */
@@ -542,6 +623,7 @@ footer {
 .footer-left-div {
     display: flex;
     justify-content: space-between;
+    padding-top: 55px;
 }
 .input-email {
     display: flex;
