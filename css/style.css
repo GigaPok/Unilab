@@ -502,7 +502,22 @@ form label {
 }
 /* Finish-P2-Section2 */
 
+/* P2-Section3 */
 
+.section3 img{
+    width: 100%;
+}
+
+.section3 p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #A6ADB4;
+    margin-top: 20px;
+    width:60%;
+}
+
+/* Finish P2-Section3 */
 
 /* footer */
 footer {
