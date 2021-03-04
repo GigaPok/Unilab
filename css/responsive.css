@@ -241,4 +241,8 @@
     .keywords input {
         width: 100%;
     }
+    .section2-box,
+    .section2-box img{
+        width: 100%;
+    }
   }
